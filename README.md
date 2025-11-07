@@ -1,5 +1,13 @@
 # Informatika-2-SkupinovyProjekt
 
+Členové skupiny:
+Tomáš Rosenbaum
+Jan Vavřina
+Filip František Rajdl
+Jakub Vitásek
+Šimon Šestořád
+František Ileš
+
 Název projektu: Žoldnéřova cesta
 
 Popis hry:
