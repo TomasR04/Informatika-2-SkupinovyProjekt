@@ -9,13 +9,9 @@ Cíl hry:
 Přežít a vydělat si jmění nebo slávu. Hráč může volit různé cesty – poctivou práci, boj, loupež nebo obchod. Výsledek závisí na jeho rozhodnutích.
 
 Základní principy:
-
-Hráč se pohybuje mezi několika lokacemi (město, hospoda, hrad, les, bažina, hřbitov).
-
+Hráč se pohybuje mezi několika lokacemi (město, hospoda, hrad, les).
 Každá lokace nabízí různé možnosti (např. „boj“, „obchod“, „odpočinek“).
-
-Hráč má statistiky jako životy, zlato a reputaci, které se mění podle akcí.
-
+Hráč má statistiky jako životy, zlato a zkušenosti, které se mění podle akcí.
 Některé volby mohou vést k různým koncům hry (např. smrt, útěk, bohatství).
 
 Cílem projektu je vytvořit jednoduchý textový systém, který zpracovává vstupy hráče, zobrazuje popisy prostředí a reaguje na rozhodnutí. Hra nebude mít grafiku – vše probíhá v konzoli.
