@@ -1,0 +1,1 @@
+# Informatika-2-SkupinovyProjekt
