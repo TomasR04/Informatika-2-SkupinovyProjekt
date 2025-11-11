@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Informatika-2-SkupinovyProjekt", "Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt.vcxproj", "{1D15F795-3904-4FB0-976F-B89901E4F0FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Debug|x64.ActiveCfg = Debug|x64
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Debug|x64.Build.0 = Debug|x64
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Debug|x86.Build.0 = Debug|Win32
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Release|x64.ActiveCfg = Release|x64
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Release|x64.Build.0 = Release|x64
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Release|x86.ActiveCfg = Release|Win32
+		{1D15F795-3904-4FB0-976F-B89901E4F0FD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2764E19-EFDC-4F4C-8ABB-3A7262051E72}
+	EndGlobalSection
+EndGlobal

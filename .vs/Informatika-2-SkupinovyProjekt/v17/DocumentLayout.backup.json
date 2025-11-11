@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Informatika-2-SkupinovyProjekt.cpp",
+              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
+              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
+              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp*",
+              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-11T12:36:23.487Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
