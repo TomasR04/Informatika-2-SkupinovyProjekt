@@ -1,10 +1,19 @@
 ﻿// Informatika-2-SkupinovyProjekt.cpp : Tento soubor obsahuje funkci main. Provádění programu se tam zahajuje a ukončuje.
 //
 
+#include "UI.h"
+#include "Controls.h"
+
 #include <iostream>
 
 int main()
 {
+	// test
+	UI::showMap();
+	Controls::moveDown();
+	UI::showMap();
+	// test
+
 	bool running = true;
 	while (running) {
 		//shit happens

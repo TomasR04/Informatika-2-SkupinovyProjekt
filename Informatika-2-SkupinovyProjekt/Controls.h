@@ -7,14 +7,14 @@ using namespace std;
 
 class Controls {
     private:
-        int x = 0;
-        int y = 0;
+        static int x;
+        static int y;
     public:
         Controls();
         
-        void moveUp();
-        void moveDown();
-        void moveLeft();
-        void moveRight();
-        pair<int, int> getPosition();
+        static void moveUp();
+        static void moveDown();
+        static void moveLeft();
+        static void moveRight();
+        static pair<int, int> getPosition();
 };
