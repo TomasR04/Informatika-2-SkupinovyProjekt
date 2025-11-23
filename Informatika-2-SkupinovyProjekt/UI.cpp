@@ -30,4 +30,6 @@ void UI::showMap()
         }
         cout << endl;
     }
+
+    cout << "-----------------" << std::endl;
 }

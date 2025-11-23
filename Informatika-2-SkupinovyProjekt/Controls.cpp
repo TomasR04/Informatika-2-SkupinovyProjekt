@@ -55,3 +55,29 @@ pair<int, int> Controls::getPosition() {
     return {Controls::x, Controls::y};
 }
 
+void Controls::processInput(string input) {
+	if (input == "w" || input == "W" || input == "up") {
+		Controls::moveUp();
+        return;
+	}
+
+	if (input == "s" || input == "S" || input == "down") {
+		Controls::moveDown();
+        return;
+	}
+
+	if (input == "a" || input == "A" || input == "left") {
+		Controls::moveLeft();
+        return;
+	}
+
+	if (input == "d" || input == "D" || input == "right") {
+		Controls::moveRight();
+		return;
+	}
+
+    if (input == "exit") {
+		cout << "Exiting the game..." << endl;
+		exit(0);
+    }
+}

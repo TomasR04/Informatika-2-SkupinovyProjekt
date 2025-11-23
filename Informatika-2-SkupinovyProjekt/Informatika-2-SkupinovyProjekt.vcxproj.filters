@@ -27,6 +27,9 @@
     <ClCompile Include="UI.cpp">
       <Filter>Zdrojové soubory</Filter>
     </ClCompile>
+    <ClCompile Include="Controls.cpp">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
@@ -37,6 +40,9 @@
     </ClInclude>
     <ClInclude Include="UI.h">
       <Filter>Hlavičkové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls.h">
+      <Filter>Zdrojové soubory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

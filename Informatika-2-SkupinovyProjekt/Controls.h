@@ -11,7 +11,7 @@ class Controls {
         static int y;
     public:
         Controls();
-        
+		static void processInput(string input);
         static void moveUp();
         static void moveDown();
         static void moveLeft();

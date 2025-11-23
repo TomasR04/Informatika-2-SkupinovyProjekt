@@ -3,24 +3,39 @@
 
 #include "UI.h"
 #include "Controls.h"
-
+#include "Windows.h"
 #include <iostream>
+#include <string>
 
+
+void SetUp() {
+	SetConsoleOutputCP(CP_UTF8);
+	SetConsoleCP(CP_UTF8);
+	std::ios_base::sync_with_stdio(false);
+}
 int main()
 {
-	// test
-	UI::showMap();
+	SetUp();
+	
+	/*UI::showMap();
 	Controls::moveDown();
-	UI::showMap();
-	// test
-
+	cout << "-----------------" << std::endl;
+	UI::showMap();*/
+	
+	string input = "";
 	bool running = true;
 	while (running) {
-		//shit happens
-		return 0;
+		UI::showMap();
+		
+		cin >> input;
+		Controls::processInput(input);
+		UI::showMap();
+		
 	}
     
 }
+
+
 
 // Spuštění programu: Ctrl+F5 nebo nabídka Ladit > Spustit bez ladění
 // Ladění programu: F5 nebo nabídka Ladit > Spustit ladění
