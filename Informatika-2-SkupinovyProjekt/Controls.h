@@ -16,5 +16,6 @@ class Controls {
         static void moveDown();
         static void moveLeft();
         static void moveRight();
+        static void changePosition(int positionX, int positionY);
         static pair<int, int> getPosition();
 };

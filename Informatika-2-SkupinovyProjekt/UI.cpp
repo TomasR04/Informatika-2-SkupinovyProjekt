@@ -3,6 +3,7 @@
 #include "Controls.h"
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -26,7 +27,9 @@ void UI::showMap()
                 tile = symbolPlayer;
             }
 
-            cout << tile;
+            
+
+            cout << tile << setw(2);
         }
         cout << endl;
     }
