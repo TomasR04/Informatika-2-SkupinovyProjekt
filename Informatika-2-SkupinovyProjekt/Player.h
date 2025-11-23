@@ -14,6 +14,7 @@ public:
 	int getStamina() const;
 	int getMaxHp() const;
 	int getMaxStamina() const;
+	int getZlato() const;
 	const std::vector<std::string>& getInventar() const;
 
 	void setJmeno(const std::string& jmeno);
@@ -22,6 +23,9 @@ public:
 	void setStamina(int stamina);
 	void setMaxHp(int maxHp);
 	void setMaxStamina(int maxStamina);
+	void setZlato(int amount);
+	void pridejZlato(int amount);
+
 
 	void pridejInventar(const std::string& polozka);
 	bool odeberInventar(const std::string& polozka);
@@ -29,6 +33,7 @@ public:
 	void damage(int amount);
 	void heal(int amount);
 	bool useStamina(int amount);
+	bool odeberZlato(int amount);
 
 	std::string toString() const;
 	friend std::ostream& operator<<(std::ostream& os, const Player& player);
@@ -40,6 +45,7 @@ private:
 	int m_stamina;
 	int m_maxHp;
 	int m_maxStamina;
+	int m_zlato;
 	std::vector<std::string> m_inventar;
 };
 

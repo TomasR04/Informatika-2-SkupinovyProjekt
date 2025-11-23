@@ -4,6 +4,7 @@
 #include "UI.h"
 #include "Controls.h"
 #include "Windows.h"
+#include "Shop.h"
 #include <iostream>
 #include <string>
 

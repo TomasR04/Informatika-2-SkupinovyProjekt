@@ -21,7 +21,8 @@ Player::Player(const std::string& jmeno, const std::string& prijmeni, int hp, in
 	m_stamina(stamina),
 	m_maxHp(maxHp),
 	m_maxStamina(maxStamina),
-	m_inventar(inventar)
+	m_inventar(inventar),
+	m_zlato(100)
 {
 	
 	if (m_maxHp < 0) m_maxHp = 0;
@@ -68,7 +69,7 @@ void Player::setMaxStamina(int maxStamina) {
 	if (m_stamina > m_maxStamina) m_stamina = m_maxStamina;
 }
 
-// inventáø
+// inventï¿½ï¿½
 void Player::pridejInventar(const std::string& polozka) {
 	m_inventar.push_back(polozka);
 }
@@ -104,13 +105,13 @@ bool Player::useStamina(int amount) {
 	return false;
 }
 
-// vıpis
+// vï¿½pis
 std::string Player::toString() const {
 	std::ostringstream oss;
 	oss << m_jmeno << " " << m_prijmeni
 		<< " | HP: " << m_hp << "/" << m_maxHp
 		<< " | Stamina: " << m_stamina << "/" << m_maxStamina
-		<< " | Inventáø: [";
+		<< " | Inventï¿½ï¿½: [";
 
 	for (size_t i = 0; i < m_inventar.size(); ++i) {
 		oss << m_inventar[i];
@@ -123,4 +124,28 @@ std::string Player::toString() const {
 std::ostream& operator<<(std::ostream& os, const Player& p) {
 	os << p.toString();
 	return os;
+}
+
+
+int Player::getZlato() const {
+	return m_zlato;
+}
+
+void Player::setZlato(int amount) {
+	m_zlato = amount;
+	if (m_zlato < 0) m_zlato = 0;
+}
+
+void Player::pridejZlato(int amount) {
+	if (amount > 0) {
+		m_zlato += amount;
+	}
+}
+
+bool Player::odeberZlato(int amount) {
+	if (amount > 0 && m_zlato >= amount) {
+		m_zlato -= amount;
+		return true; // Transakce probÄ›hla ÃºspÄ›Å¡nÄ›
+	}
+	return false; // NemÃ¡Å¡ dost penÄ›z!
 }
