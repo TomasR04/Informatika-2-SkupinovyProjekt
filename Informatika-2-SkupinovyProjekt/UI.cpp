@@ -21,15 +21,13 @@ void UI::showMap()
             int positionX = position.first;
             int positionY = position.second;
 
-            string tile = currentMap[c][r];
+            string tile = currentMap[r][c];  
 
             if (r == positionY && c == positionX) {
                 tile = symbolPlayer;
             }
 
-            
-
-            cout << tile << setw(2);
+            cout << tile;
         }
         cout << endl;
     }

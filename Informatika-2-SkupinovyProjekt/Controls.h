@@ -7,8 +7,7 @@ using namespace std;
 
 class Controls {
     private:
-        static int x;
-        static int y;
+        
     public:
         Controls();
 		static void processInput(string input);
@@ -18,4 +17,15 @@ class Controls {
         static void moveRight();
         static void changePosition(int positionX, int positionY);
         static pair<int, int> getPosition();
+		static void updatePosition();
+        static int x;
+        static int y;
+        static int oldX;
+        static int oldY;
+        static enum GameState {
+			TRAVELING,
+			FIGHTING,
+            TRADING
+        };
+		static GameState gameState;
 };

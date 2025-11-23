@@ -1,4 +1,5 @@
-﻿  Informatika-2-SkupinovyProjekt.cpp
-  UI.cpp
-  Generování kódu...
+﻿  Controls.cpp
+C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Controls.h(25,21): warning C4091: static : Levá strana Controls::GameState se ignoruje, pokud není deklarovaná žádná proměnná.
+  (kompilování zdrojového souboru Controls.cpp)
+  
   Informatika-2-SkupinovyProjekt.vcxproj -> C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\x64\Debug\Informatika-2-SkupinovyProjekt.exe

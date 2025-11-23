@@ -13,8 +13,11 @@ void SetUp() {
 	SetConsoleCP(CP_UTF8);
 	std::ios_base::sync_with_stdio(false);
 }
+
+
 int main()
 {
+	Controls::gameState = Controls::TRAVELING;
 	SetUp();
 	
 	/*UI::showMap();
@@ -25,11 +28,26 @@ int main()
 	string input = "";
 	bool running = true;
 	while (running) {
-		UI::showMap();
-		
-		cin >> input;
-		Controls::processInput(input);
-		UI::showMap();
+		if (Controls::gameState == Controls::TRAVELING) {
+			UI::showMap();
+
+			cin >> input;
+			Controls::processInput(input);
+		}
+		else if (Controls::gameState == Controls::TRADING) { //TO DO: Zde v tomto ifu bude obchodování
+			cout << "You are now trading. Type 'exit' to leave trading." << endl;
+			cin >> input;
+			if (input == "exit") {
+				Controls::gameState = Controls::TRAVELING;
+			}
+		}
+		else if (Controls::gameState == Controls::FIGHTING) { //TO DO: Zde v tomto ifu bude bojování
+			cout << "You are now fighting! Type 'run' to escape." << endl;
+			cin >> input;
+			if (input == "run") {
+				Controls::gameState = Controls::TRAVELING;
+			}
+		}
 		
 	}
     
