@@ -5,35 +5,37 @@
 //Franta
 
 Player::Player()
-	: m_jmeno(""),
-	m_prijmeni(""),
-	m_hp(100),
-	m_stamina(100),
-	m_maxHp(100),
-	m_maxStamina(100),
-	m_inventar() {
+    : m_jmeno(""),
+    m_prijmeni(""),
+    m_hp(100),
+    m_stamina(100),
+    m_maxHp(100),
+    m_maxStamina(100),
+    m_inventar(),
+    m_zlato(100),
+    m_equippedIndex(-1)
+{
 }
 
 Player::Player(const std::string& jmeno, const std::string& prijmeni, int hp, int stamina, int maxHp, int maxStamina, vector<Item> inventar)
-	: m_jmeno(jmeno),
-	m_prijmeni(prijmeni),
-	m_hp(hp),
-	m_stamina(stamina),
-	m_maxHp(maxHp),
-	m_maxStamina(maxStamina),
-	m_inventar(inventar),
-	m_zlato(100)
+    : m_jmeno(jmeno),
+    m_prijmeni(prijmeni),
+    m_hp(hp),
+    m_stamina(stamina),
+    m_maxHp(maxHp),
+    m_maxStamina(maxStamina),
+    m_inventar(inventar),
+    m_zlato(1000),
+    m_equippedIndex(-1)
 {
-	
-	if (m_maxHp < 0) m_maxHp = 0;
-	if (m_maxStamina < 0) m_maxStamina = 0;
+    if (m_maxHp < 0) m_maxHp = 0;
+    if (m_maxStamina < 0) m_maxStamina = 0;
 
-	
-	if (m_hp > m_maxHp) m_hp = m_maxHp;
-	if (m_hp < 0) m_hp = 0;
+    if (m_hp > m_maxHp) m_hp = m_maxHp;
+    if (m_hp < 0) m_hp = 0;
 
-	if (m_stamina > m_maxStamina) m_stamina = m_maxStamina;
-	if (m_stamina < 0) m_stamina = 0;
+    if (m_stamina > m_maxStamina) m_stamina = m_maxStamina;
+    if (m_stamina < 0) m_stamina = 0;
 }
 
 const std::string& Player::getJmeno() const { return m_jmeno; }
@@ -44,44 +46,47 @@ int Player::getMaxHp() const { return m_maxHp; }
 int Player::getMaxStamina() const { return m_maxStamina; }
 vector<Item> Player::getInventar() const { return m_inventar; }
 
-
 void Player::setJmeno(const std::string& jmeno) { m_jmeno = jmeno; }
 void Player::setPrijmeni(const std::string& prijmeni) { m_prijmeni = prijmeni; }
 
 void Player::setHp(int hp) {
-	m_hp = hp;
-	if (m_hp < 0) m_hp = 0;
-	if (m_hp > m_maxHp) m_hp = m_maxHp;
+    m_hp = hp;
+    if (m_hp < 0) m_hp = 0;
+    if (m_hp > m_maxHp) m_hp = m_maxHp;
 }
 
 void Player::setStamina(int stamina) {
-	m_stamina = stamina;
-	if (m_stamina < 0) m_stamina = 0;
-	if (m_stamina > m_maxStamina) m_stamina = m_maxStamina;
+    m_stamina = stamina;
+    if (m_stamina < 0) m_stamina = 0;
+    if (m_stamina > m_maxStamina) m_stamina = m_maxStamina;
 }
 
 void Player::setMaxHp(int maxHp) {
-	m_maxHp = maxHp;
-	if (m_hp > m_maxHp) m_hp = m_maxHp;
+    m_maxHp = maxHp;
+    if (m_hp > m_maxHp) m_hp = m_maxHp;
 }
 
 void Player::setMaxStamina(int maxStamina) {
-	m_maxStamina = maxStamina;
-	if (m_stamina > m_maxStamina) m_stamina = m_maxStamina;
+    m_maxStamina = maxStamina;
+    if (m_stamina > m_maxStamina) m_stamina = m_maxStamina;
 }
 
-// invent��
+// inventář
 void Player::pridejInventar(Item polozka) {
-	m_inventar.push_back(polozka);
+    m_inventar.push_back(polozka);
 }
 
 bool Player::odeberInventar(Item polozka) {
-	auto it = std::find(m_inventar.begin(), m_inventar.end(), polozka);
-	if (it != m_inventar.end()) {
-		m_inventar.erase(it);
-		return true;
-	}
-	return false;
+    auto it = std::find(m_inventar.begin(), m_inventar.end(), polozka);
+    if (it != m_inventar.end()) {
+        int idx = static_cast<int>(std::distance(m_inventar.begin(), it));
+        // pokud odebíráme právě vybavenou položku, sundáme ji
+        if (idx == m_equippedIndex) m_equippedIndex = -1;
+        else if (idx >= 0 && idx < m_equippedIndex) --m_equippedIndex; // adjust index
+        m_inventar.erase(it);
+        return true;
+    }
+    return false;
 }
 
 // convenience overloads using item name
@@ -94,75 +99,119 @@ void Player::pridejInventar(const std::string& itemName) {
 bool Player::odeberInventar(const std::string& itemName) {
     auto it = std::find_if(m_inventar.begin(), m_inventar.end(), [&](const Item& i) { return i.name == itemName; });
     if (it != m_inventar.end()) {
+        int idx = static_cast<int>(std::distance(m_inventar.begin(), it));
+        if (idx == m_equippedIndex) m_equippedIndex = -1;
+        else if (idx >= 0 && idx < m_equippedIndex) --m_equippedIndex;
         m_inventar.erase(it);
         return true;
     }
     return false;
 }
 
+// equip / unequip
+bool Player::equipItem(const std::string& itemName) {
+    auto it = std::find_if(m_inventar.begin(), m_inventar.end(), [&](const Item& i) { return i.name == itemName; });
+    if (it != m_inventar.end()) {
+        m_equippedIndex = static_cast<int>(std::distance(m_inventar.begin(), it));
+        return true;
+    }
+    return false;
+}
+
+void Player::unequip() {
+    m_equippedIndex = -1;
+}
+
+bool Player::hasEquippedWeapon() const {
+    if (m_equippedIndex < 0) return false;
+    if (m_equippedIndex >= static_cast<int>(m_inventar.size())) return false;
+    Item it = m_inventar[m_equippedIndex];
+    return (it.type == Item::Type::MELEE_WEAPON || it.type == Item::Type::RANGED_WEAPON);
+}
+
+Item* Player::getEquippedItem() {
+    if (m_equippedIndex < 0 || m_equippedIndex >= static_cast<int>(m_inventar.size())) return nullptr;
+    return &m_inventar[m_equippedIndex];
+}
+
+int Player::getEquippedWeaponDamage() const {
+    if (m_equippedIndex < 0 || m_equippedIndex >= static_cast<int>(m_inventar.size())) return 0;
+    const Item& it = m_inventar[m_equippedIndex];
+    if (it.type == Item::Type::MELEE_WEAPON || it.type == Item::Type::RANGED_WEAPON) {
+        return it.value; // treat `value` as weapon damage bonus
+    }
+    return 0;
+}
+
 // akce
 void Player::damage(int amount) {
-	if (amount <= 0) return;
-	m_hp -= amount;
-	if (m_hp < 0) m_hp = 0;
+    if (amount <= 0) return;
+    m_hp -= amount;
+    if (m_hp < 0) m_hp = 0;
 }
 
 void Player::heal(int amount) {
-	if (amount <= 0) return;
-	m_hp += amount;
-	if (m_hp > m_maxHp) m_hp = m_maxHp;
+    if (amount <= 0) return;
+    m_hp += amount;
+    if (m_hp > m_maxHp) m_hp = m_maxHp;
 }
 
 bool Player::useStamina(int amount) {
-	if (amount <= 0) return true;
-	if (m_stamina >= amount) {
-		m_stamina -= amount;
-		return true;
-	}
-	return false;
+    if (amount <= 0) return true;
+    if (m_stamina >= amount) {
+        m_stamina -= amount;
+        return true;
+    }
+    return false;
 }
 
 // v�pis
 std::string Player::toString() const {
-	std::ostringstream oss;
-	oss << m_jmeno << " " << m_prijmeni
-		<< " | HP: " << m_hp << "/" << m_maxHp
-		<< " | Stamina: " << m_stamina << "/" << m_maxStamina
-		<< " | Invent��: [";
+    std::ostringstream oss;
+    oss << m_jmeno << " " << m_prijmeni
+        << " | HP: " << m_hp << "/" << m_maxHp
+        << " | Stamina: " << m_stamina << "/" << m_maxStamina
+        << " | Invent��: [";
 
-	for (size_t i = 0; i < m_inventar.size(); ++i) {
-		oss << m_inventar[i].name;
-		if (i + 1 < m_inventar.size()) oss << ", ";
-	}
-	oss << "]";
-	return oss.str();
+    for (size_t i = 0; i < m_inventar.size(); ++i) {
+        oss << m_inventar[i].name;
+        if (i + 1 < m_inventar.size()) oss << ", ";
+    }
+    oss << "]";
+    // equipped
+    if (m_equippedIndex >= 0 && m_equippedIndex < static_cast<int>(m_inventar.size())) {
+        oss << " | Equipped: " << m_inventar[m_equippedIndex].name;
+    }
+    else {
+        oss << " | Equipped: (none)";
+    }
+    return oss.str();
 }
 
 /*std::ostream& operator<<(std::ostream& os, const Player& p) {
-	os << p.toString();
-	return os;
+    os << p.toString();
+    return os;
 }*/
 
-
 int Player::getZlato() const {
-	return m_zlato;
+    return m_zlato;
 }
 
 void Player::setZlato(int amount) {
-	m_zlato = amount;
-	if (m_zlato < 0) m_zlato = 0;
+    m_zlato = amount;
+    if (m_zlato < 0) m_zlato = 0;
 }
 
 void Player::pridejZlato(int amount) {
-	if (amount > 0) {
-		m_zlato += amount;
-	}
+    if (amount > 0) {
+        m_zlato += amount;
+    }
 }
 
 bool Player::odeberZlato(int amount) {
-	if (amount > 0 && m_zlato >= amount) {
-		m_zlato -= amount;
-		return true; // Transakce proběhla úspěšně
-	}
-	return false; // Nemáš dost peněz!
+    if (amount > 0 && m_zlato >= amount) {
+        m_zlato -= amount;
+        return true; // Transakce proběhla úspěšně
+    }
+    return false; // Nemáš dost peněz!
 }

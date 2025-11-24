@@ -32,8 +32,8 @@ inline std::vector<Zbozi>& Shop::getNabidka() {
     static std::vector<Zbozi> nabidka = {
 		{Item("Pivson", 50, 20, 100, Item::Type::POTION), 50},
 		{Item("Chleba", 30, 10, 50, Item::Type::FOOD), 30},
-		{Item("Mec", 200, 0, 0, Item::Type::MELEE_WEAPON), 200},
-		{Item("Luk", 150, 0, 0, Item::Type::RANGED_WEAPON), 150},
+		{Item("Mec", 200, 15, 100, Item::Type::MELEE_WEAPON), 200},
+		{Item("Luk", 150, 10, 100, Item::Type::RANGED_WEAPON), 150},
 
     };
     return nabidka;

@@ -1,5 +1,6 @@
 #include "Fighting.h"
 #include "Controls.h"
+#include "Player.h"
 
 #include <iostream>
 #include <cstdlib>
@@ -58,6 +59,9 @@ bool Fighting::startFight(Player& player)
         bool playerActed = false;   // jestli hráè skuteènì nìco udìlal (tøeba ne kvùli nedostatku staminy)
         bool wantsToRun = false;  // jestli se hráè pokusil utéct
 
+        // získáme bonus z vybavené zbranì
+        int weaponBonus = player.getEquippedWeaponDamage();
+
         // === TAH HRÁÈE ===
         if (cmd == "a" || cmd == "A" || cmd == "attack")
         {
@@ -68,9 +72,12 @@ bool Fighting::startFight(Player& player)
             }
             else
             {
-                int dmg = 10 + (std::rand() % 6); // 10–15
+                int base = 10 + (std::rand() % 6); // 10–15
+                int dmg = base + weaponBonus;
                 enemyHp -= dmg;
-                cout << "Zasáhl jsi " << enemyName << " za " << dmg << " DMG!\n";
+                cout << "Zasáhl jsi " << enemyName << " za " << dmg;
+                if (weaponBonus > 0) cout << " (" << base << " + zbraò " << weaponBonus << ")";
+                cout << " DMG!\n";
                 playerActed = true;
             }
         }
@@ -86,9 +93,13 @@ bool Fighting::startFight(Player& player)
                 int hitChance = std::rand() % 100; // 0–99
                 if (hitChance < 70) // 70% šance, že trefí
                 {
-                    int dmg = 22 + (std::rand() % 9); // 22–30
+                    int base = 22 + (std::rand() % 9); // 22–30
+                    // u tìžkého útoku mùžeme zbraní pøièíst tøeba celý bonus * 2 (volitelné) — zatím použijeme 1×
+                    int dmg = base + weaponBonus;
                     enemyHp -= dmg;
-                    cout << "Silny útok! Dal jsi " << dmg << " DMG!\n";
+                    cout << "Silny útok! Dal jsi " << dmg;
+                    if (weaponBonus > 0) cout << " (" << base << " + zbraò " << weaponBonus << ")";
+                    cout << " DMG!\n";
                 }
                 else
                 {
@@ -148,7 +159,7 @@ bool Fighting::startFight(Player& player)
         {
             cout << "\nByl jsi poražen!\n";
             cout << "GAME OVER.\n";
-            
+
             exit(0);
         }
     }
