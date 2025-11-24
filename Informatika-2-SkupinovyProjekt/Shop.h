@@ -4,10 +4,17 @@
 #include <string>
 #include <iostream>
 #include <algorithm>
+#include "Item.h"
+using namespace std;
 
-struct Zbozi {
+/*struct Zbozi {
     std::string nazev;
     int cena;
+};*/
+
+struct Zbozi {
+	Item item;
+	int cena;
 };
 
 class Shop {
@@ -23,17 +30,18 @@ private:
 // Implementation in header (inline) so the shop is usable without relying on a separate TU.
 inline std::vector<Zbozi>& Shop::getNabidka() { 
     static std::vector<Zbozi> nabidka = {
-        {"Pivo", 15},
-        {"Mec", 150},
-        {"Lektvar", 50},
-        {"Chleb", 10}
+		{Item("Pivson", 50, 20, 100, Item::Type::POTION), 50},
+		{Item("Chleba", 30, 10, 50, Item::Type::FOOD), 30},
+		{Item("Mec", 200, 0, 0, Item::Type::MELEE_WEAPON), 200},
+		{Item("Luk", 150, 0, 0, Item::Type::RANGED_WEAPON), 150},
+
     };
     return nabidka;
 }
 
 inline int Shop::dejCenu(const std::string& nazev) {
     for (const auto& z : getNabidka()) {
-        if (z.nazev == nazev) return z.cena / 2; // Výkup za polovinu
+        if (z.item.name == nazev) return z.cena / 2; // Výkup za polovinu
     }
     return 1;
 }
@@ -52,7 +60,7 @@ inline void Shop::start(Player& hrac) {
         // Výpis zboží
         auto& nabidka = getNabidka();
         for (size_t i = 0; i < nabidka.size(); i++) {
-            std::cout << i + 1 << ". " << nabidka[i].nazev << " (" << nabidka[i].cena << " zl)" << std::endl;
+            std::cout << i + 1 << ". " << nabidka[i].item.name << " (" << nabidka[i].cena << " zl)" << std::endl;
         }
 
         std::cout << "\nNAPIS: cislo (nakup), 'p nazev' (prodej), 'exit' (odchod)" << std::endl;
@@ -78,7 +86,7 @@ inline void Shop::start(Player& hrac) {
                 int id = std::stoi(vstup) - 1;
                 if (id >= 0 && id < (int)nabidka.size()) {
                     if (hrac.odeberZlato(nabidka[id].cena)) {
-                        hrac.pridejInventar(nabidka[id].nazev);
+                        hrac.pridejInventar(nabidka[id].item);
                         std::cout << "Koupeno!" << std::endl;
                     } else std::cout << "Nemas penize!" << std::endl;
                 }

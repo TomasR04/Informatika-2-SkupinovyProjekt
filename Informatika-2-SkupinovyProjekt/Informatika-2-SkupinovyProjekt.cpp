@@ -14,6 +14,7 @@
 #include <vector>
 #include <ostream>
 #include "Item.h"
+#include "Fighting.h"
 
 using namespace std;
 
@@ -61,11 +62,7 @@ int main()
 			Controls::gameState = Controls::TRAVELING;
 		}
 		else if (Controls::gameState == Controls::FIGHTING) { //TO DO: Zde v tomto ifu bude bojování
-			cout << "You are now fighting! Type 'run' to escape." << endl;
-			cin >> input;
-			if (input == "run") {
-				Controls::gameState = Controls::TRAVELING;
-			}
+			Fighting::startFight(hranyHrac);
 		}
 		
 	}

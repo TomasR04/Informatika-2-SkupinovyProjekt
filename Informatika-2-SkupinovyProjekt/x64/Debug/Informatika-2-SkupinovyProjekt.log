@@ -1,8 +1,30 @@
-﻿  Informatika-2-SkupinovyProjekt.cpp
+﻿  Map.cpp
 C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Controls.h(26,21): warning C4091: static : Levá strana Controls::GameState se ignoruje, pokud není deklarovaná žádná proměnná.
-  (kompilování zdrojového souboru Informatika-2-SkupinovyProjekt.cpp)
+  (kompilování zdrojového souboru Map.cpp)
   
-C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Item.h(11,14): warning C4091: static : Levá strana Item::Type se ignoruje, pokud není deklarovaná žádná proměnná.
-  (kompilování zdrojového souboru Informatika-2-SkupinovyProjekt.cpp)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,16): warning C4267: inicializování: Převod z: size_t na: _Ty1, může dojít ke ztrátě dat.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,16): warning C4267:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,16): warning C4267:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,16): warning C4267:             _Ty1=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,16): warning C4267:         ]
+  (kompilování zdrojového souboru Map.cpp)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,16):
+      kontext vytváření instancí šablony (první nejstarší) je
+          C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Map.cpp(92,5):
+          Zobrazit odkaz na kompilované vytváření instancí funkce šablona std::pair<int,int>::pair<unsigned __int64,unsigned __int64,0>(_Other1 &&,_Other2 &&) noexcept
+          with
+          [
+              _Other1=unsigned __int64,
+              _Other2=unsigned __int64
+          ]
+              C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Map.cpp(92,5):
+              zobrazit první odkaz na std::pair<int,int>::pair v Map::getMapSize
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4267: inicializování: Převod z: size_t na: _Ty2, může dojít ke ztrátě dat.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4267:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4267:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4267:             _Ty2=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4267:         ]
+  (kompilování zdrojového souboru Map.cpp)
   
   Informatika-2-SkupinovyProjekt.vcxproj -> C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\x64\Debug\Informatika-2-SkupinovyProjekt.exe

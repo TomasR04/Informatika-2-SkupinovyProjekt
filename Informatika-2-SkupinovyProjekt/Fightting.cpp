@@ -148,9 +148,8 @@ bool Fighting::startFight(Player& player)
         {
             cout << "\nByl jsi poražen!\n";
             cout << "GAME OVER.\n";
-            // Mùžeš tady dát tøeba exit(0), ale nechávám na vás
-            // exit(0);
-            return false;
+            
+            exit(0);
         }
     }
 
