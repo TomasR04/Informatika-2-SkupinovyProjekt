@@ -39,7 +39,7 @@ int main()
 			cout << "You are now trading. Type 'exit' to leave trading." << endl;
 			cin >> input;
 			if (input == "exit") {
-				Controls::gameState = Controls::TRAVELING;
+				Shop::start(hrac);
 			}
 		}
 		else if (Controls::gameState == Controls::FIGHTING) { //TO DO: Zde v tomto ifu bude bojování

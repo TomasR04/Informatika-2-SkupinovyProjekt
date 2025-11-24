@@ -2,11 +2,13 @@
 #include <string>
 #include <vector>
 #include <ostream>
+#include "Item.h"
+using namespace std;
 class Player //Franta
 {
 public:
 	Player();
-	Player(const std::string& jmeno, const std::string& prijmeni, int hp, int stamina, int maxHp, int maxStamina, const std::vector<std::string>& inventar);
+	Player(const std::string& jmeno, const std::string& prijmeni, int hp, int stamina, int maxHp, int maxStamina, vector<Item> inventory);
 	 
 	const std::string& getJmeno() const;
 	const std::string& getPrijmeni() const;
@@ -15,7 +17,7 @@ public:
 	int getMaxHp() const;
 	int getMaxStamina() const;
 	int getZlato() const;
-	const std::vector<std::string>& getInventar() const;
+	vector<Item> getInventar() const;
 
 	void setJmeno(const std::string& jmeno);
 	void setPrijmeni(const std::string& prijmeni);
@@ -27,8 +29,8 @@ public:
 	void pridejZlato(int amount);
 
 
-	void pridejInventar(const std::string& polozka);
-	bool odeberInventar(const std::string& polozka);
+	void pridejInventar(Item polozka);
+	bool odeberInventar(Item polozka);
 
 	void damage(int amount);
 	void heal(int amount);
@@ -46,7 +48,7 @@ private:
 	int m_maxHp;
 	int m_maxStamina;
 	int m_zlato;
-	std::vector<std::string> m_inventar;
+	vector<Item> m_inventar;
 };
 
 

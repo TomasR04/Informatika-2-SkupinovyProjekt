@@ -14,7 +14,7 @@ Player::Player()
 	m_inventar() {
 }
 
-Player::Player(const std::string& jmeno, const std::string& prijmeni, int hp, int stamina, int maxHp, int maxStamina, const std::vector<std::string>& inventar)
+Player::Player(const std::string& jmeno, const std::string& prijmeni, int hp, int stamina, int maxHp, int maxStamina, vector<Item> inventar)
 	: m_jmeno(jmeno),
 	m_prijmeni(prijmeni),
 	m_hp(hp),
@@ -42,7 +42,8 @@ int Player::getHp() const { return m_hp; }
 int Player::getStamina() const { return m_stamina; }
 int Player::getMaxHp() const { return m_maxHp; }
 int Player::getMaxStamina() const { return m_maxStamina; }
-const std::vector<std::string>& Player::getInventar() const { return m_inventar; }
+vector<Item> Player::getInventar() const { return m_inventar; }
+
 
 void Player::setJmeno(const std::string& jmeno) { m_jmeno = jmeno; }
 void Player::setPrijmeni(const std::string& prijmeni) { m_prijmeni = prijmeni; }
@@ -70,11 +71,11 @@ void Player::setMaxStamina(int maxStamina) {
 }
 
 // invent��
-void Player::pridejInventar(const std::string& polozka) {
+void Player::pridejInventar(Item polozka) {
 	m_inventar.push_back(polozka);
 }
 
-bool Player::odeberInventar(const std::string& polozka) {
+bool Player::odeberInventar(Item polozka) {
 	auto it = std::find(m_inventar.begin(), m_inventar.end(), polozka);
 	if (it != m_inventar.end()) {
 		m_inventar.erase(it);
@@ -114,7 +115,7 @@ std::string Player::toString() const {
 		<< " | Invent��: [";
 
 	for (size_t i = 0; i < m_inventar.size(); ++i) {
-		oss << m_inventar[i];
+		oss << m_inventar[i].name;
 		if (i + 1 < m_inventar.size()) oss << ", ";
 	}
 	oss << "]";
