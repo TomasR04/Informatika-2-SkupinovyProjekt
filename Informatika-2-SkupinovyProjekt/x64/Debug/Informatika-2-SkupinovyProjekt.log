@@ -1,10 +1,8 @@
-﻿  Fightting.cpp
-C:\Users\kubav\informatika-2-ukoly-2025-svejkys\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Controls.h(25,21): warning C4091: static : Levá strana Controls::GameState se ignoruje, pokud není deklarovaná žádná proměnná.
-  (kompilování zdrojového souboru Fightting.cpp)
-  
-  Informatika-2-SkupinovyProjekt.cpp
-C:\Users\kubav\informatika-2-ukoly-2025-svejkys\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Controls.h(25,21): warning C4091: static : Levá strana Controls::GameState se ignoruje, pokud není deklarovaná žádná proměnná.
+﻿  Informatika-2-SkupinovyProjekt.cpp
+C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Controls.h(26,21): warning C4091: static : Levá strana Controls::GameState se ignoruje, pokud není deklarovaná žádná proměnná.
   (kompilování zdrojového souboru Informatika-2-SkupinovyProjekt.cpp)
   
-  Generování kódu...
-  Informatika-2-SkupinovyProjekt.vcxproj -> C:\Users\kubav\informatika-2-ukoly-2025-svejkys\Informatika-2-SkupinovyProjekt\x64\Debug\Informatika-2-SkupinovyProjekt.exe
+C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\Informatika-2-SkupinovyProjekt\Item.h(11,14): warning C4091: static : Levá strana Item::Type se ignoruje, pokud není deklarovaná žádná proměnná.
+  (kompilování zdrojového souboru Informatika-2-SkupinovyProjekt.cpp)
+  
+  Informatika-2-SkupinovyProjekt.vcxproj -> C:\Stuff\UNOB\Informatika\Informatika-2-SkupinovyProjekt\x64\Debug\Informatika-2-SkupinovyProjekt.exe

@@ -1,6 +1,7 @@
 #include "Shop.h"
 #include <iostream>
 #include <algorithm>
+#include "Controls.h"
 
 using namespace std;
 
@@ -41,6 +42,7 @@ void Shop::start(Player& hrac) {
 
         if (vstup == "exit") {
             nakupuje = false;
+            
         }
         else if (vstup == "p") {
             string co; cin >> co;
@@ -66,4 +68,7 @@ void Shop::start(Player& hrac) {
             system("pause");
         }
     }
+    //Controls::gameState = Controls::TRAVELING;
 }
+
+

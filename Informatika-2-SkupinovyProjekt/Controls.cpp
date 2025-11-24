@@ -1,8 +1,10 @@
 #include "Controls.h"
 #include "Map.h"
+#include "Player.h"
 
 #include <iostream>
 #include <utility>
+#include <string>
 
 using namespace std;
 
@@ -13,6 +15,9 @@ int Controls::oldX = 0;
 int Controls::oldY = 0;
 
 Controls::GameState Controls::gameState = Controls::GameState::TRAVELING;
+
+
+
 
 // key X or arrow Up
 void Controls::moveUp()
@@ -108,11 +113,8 @@ void Controls::processInput(string input)
         return;
     }
 
-    if (input == "d" || input == "D" || input == "right")
-    {
-        Controls::moveRight();
-        return;
-    }*/
+
+*/
 
 	if (input == "w" || input == "W")
 	{
@@ -142,6 +144,13 @@ void Controls::processInput(string input)
 		Controls::updatePosition();
 		return;
 	}
+
+    if (input == "stats") {
+		// Display player stats
+		cout << "Player Stats:" << endl;
+		cout << hranyHrac.toString() << endl;
+        return;
+    }
 
     if (input == "exit")
     {

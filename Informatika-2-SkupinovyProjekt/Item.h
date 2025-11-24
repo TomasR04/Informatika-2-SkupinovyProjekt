@@ -19,3 +19,13 @@ public:
 	
 };
 
+// define equality so algorithms like std::find can compare Items
+inline bool operator==(const Item& a, const Item& b) {
+    return a.name == b.name && a.basePrice == b.basePrice && a.value == b.value
+        && a.duration == b.duration && a.type == b.type;
+}
+
+inline bool operator!=(const Item& a, const Item& b) {
+    return !(a == b);
+}
+

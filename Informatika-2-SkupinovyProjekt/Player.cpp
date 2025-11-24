@@ -84,6 +84,22 @@ bool Player::odeberInventar(Item polozka) {
 	return false;
 }
 
+// convenience overloads using item name
+void Player::pridejInventar(const std::string& itemName) {
+    // create a simple Item with default values; this may be replaced with a factory lookup
+    Item it(itemName, 0, 0, 0, Item::Type::FOOD);
+    pridejInventar(it);
+}
+
+bool Player::odeberInventar(const std::string& itemName) {
+    auto it = std::find_if(m_inventar.begin(), m_inventar.end(), [&](const Item& i) { return i.name == itemName; });
+    if (it != m_inventar.end()) {
+        m_inventar.erase(it);
+        return true;
+    }
+    return false;
+}
+
 // akce
 void Player::damage(int amount) {
 	if (amount <= 0) return;
@@ -122,10 +138,10 @@ std::string Player::toString() const {
 	return oss.str();
 }
 
-std::ostream& operator<<(std::ostream& os, const Player& p) {
+/*std::ostream& operator<<(std::ostream& os, const Player& p) {
 	os << p.toString();
 	return os;
-}
+}*/
 
 
 int Player::getZlato() const {

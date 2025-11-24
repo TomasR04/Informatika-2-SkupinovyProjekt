@@ -1,0 +1,69 @@
+﻿#pragma once
+#include "Player.h"
+#include <vector>
+#include <string>
+#include <iostream>
+#include <algorithm>
+
+struct Zbozi {
+    std::string nazev;
+    int cena;
+};
+
+class Shop {
+public:
+    static void start(Player& hrac);
+
+private:
+    static std::vector<Zbozi> nabidka;
+    static int dejCenu(std::string nazev);
+};
+
+inline void Shop::start(Player& hrac) {
+    bool nakupuje = true;
+    std::string vstup;
+
+    while (nakupuje) {
+        system("cls"); // Vyčistí obrazovku
+        std::cout << "--- HOSPODA U KRIGLU ---" << std::endl;
+        std::cout << "Zlato: " << hrac.getZlato() << std::endl;
+        std::cout << "Batoh: " << hrac.toString() << std::endl;
+        std::cout << "------------------------" << std::endl;
+        
+        // Výpis zboží
+        for (size_t i = 0; i < nabidka.size(); i++) {
+            std::cout << i + 1 << ". " << nabidka[i].nazev << " (" << nabidka[i].cena << " zl)" << std::endl;
+        }
+
+        std::cout << "\nNAPIS: cislo (nakup), 'p nazev' (prodej), 'exit' (odchod)" << std::endl;
+        std::cout << "> ";
+        std::cin >> vstup;
+
+        if (vstup == "exit") {
+            nakupuje = false;
+        }
+        else if (vstup == "p") {
+            std::string co; std::cin >> co;
+            if (hrac.odeberInventar(co)) {
+                int cena = dejCenu(co);
+                hrac.pridejZlato(cena);
+                std::cout << "Prodal jsi " << co << " za " << cena << std::endl;
+            } else {
+                std::cout << "To nemas!" << std::endl;
+            }
+            system("pause");
+        }
+        else {
+            try {
+                int id = std::stoi(vstup) - 1;
+                if (id >= 0 && id < (int)nabidka.size()) {
+                    if (hrac.odeberZlato(nabidka[id].cena)) {
+                        hrac.pridejInventar(nabidka[id].nazev);
+                        std::cout << "Koupeno!" << std::endl;
+                    } else std::cout << "Nemas penize!" << std::endl;
+                }
+            } catch (...) {}
+            system("pause");
+        }
+    }
+}

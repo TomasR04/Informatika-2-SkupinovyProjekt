@@ -10,6 +10,7 @@ class Controls {
         
     public:
         Controls();
+		
 		static void processInput(string input);
         static void moveUp();
         static void moveDown();

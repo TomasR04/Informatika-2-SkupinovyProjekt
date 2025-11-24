@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Informatika-2-SkupinovyProjekt\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Controls.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Controls.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,28 +47,8 @@
       "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Controls.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Controls.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Informatika-2-SkupinovyProjekt\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|solutionrelative:Informatika-2-SkupinovyProjekt\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D15F795-3904-4FB0-976F-B89901E4F0FD}|Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.vcxproj|C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Item.h",
               "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Item.h",
               "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Item.h",
@@ -79,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Item.cpp",
               "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Item.cpp",
               "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Item.cpp",
@@ -88,8 +88,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-24T08:18:42.953Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -102,79 +101,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Shop.h",
-              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.h",
-              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Shop.h",
-              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.h",
-              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Shop.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-24T08:07:53.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Shop.cpp",
-              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.cpp",
-              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Shop.cpp",
-              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.cpp",
-              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Shop.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-23T20:36:59.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Controls.h",
-              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.h",
-              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Controls.h",
-              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.h",
-              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Controls.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-23T09:28:27.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Controls.cpp",
               "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.cpp",
               "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Controls.cpp",
               "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.cpp",
               "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Controls.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-23T09:27:08.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UI.cpp",
-              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\UI.cpp",
-              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\UI.cpp",
-              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\UI.cpp",
-              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\UI.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Informatika-2-SkupinovyProjekt.cpp",
+              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
+              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
+              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
+              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
+              "ViewState": "AgIAACMAAAAAAAAAAAAtwDwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-21T15:48:55.626Z"
+              "WhenOpened": "2025-11-11T12:36:23.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Map.cpp",
               "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Map.cpp",
               "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Map.cpp",
               "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Map.cpp",
               "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Map.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAMUAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-11T12:42:10.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "Shop.h",
+              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.h",
+              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Shop.h",
+              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.h",
+              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Shop.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-24T08:07:53.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Map.h",
               "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Map.h",
               "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Map.h",
@@ -186,41 +160,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.cpp",
-              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Player.cpp",
-              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.cpp",
-              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Player.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-11T12:40:29.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.h",
               "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Player.h",
               "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.h",
               "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Player.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAtwA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-11T12:40:18.611Z",
+              "WhenOpened": "2025-11-11T12:40:18.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Shop.cpp",
+              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.cpp",
+              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Shop.cpp",
+              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Shop.cpp",
+              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Shop.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T20:36:59.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controls.h",
+              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.h",
+              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Controls.h",
+              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Controls.h",
+              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Controls.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T09:28:27.032Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Informatika-2-SkupinovyProjekt.cpp",
-              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
-              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
-              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
-              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt.cpp",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.cpp",
+              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\Player.cpp",
+              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\Player.cpp",
+              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\Player.cpp",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAtwBwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-11T12:36:23.487Z"
+              "WhenOpened": "2025-11-11T12:40:29.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UI.cpp",
+              "DocumentMoniker": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\UI.cpp",
+              "RelativeDocumentMoniker": "Informatika-2-SkupinovyProjekt\\UI.cpp",
+              "ToolTip": "C:\\Stuff\\UNOB\\Informatika\\Informatika-2-SkupinovyProjekt\\Informatika-2-SkupinovyProjekt\\UI.cpp",
+              "RelativeToolTip": "Informatika-2-SkupinovyProjekt\\UI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T15:48:55.626Z"
             },
             {
               "$type": "Document",

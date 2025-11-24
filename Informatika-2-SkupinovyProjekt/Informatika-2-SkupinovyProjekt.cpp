@@ -8,7 +8,17 @@
 #include <iostream>
 #include <string>
 #include "Fighting.h"
+#include "Player.h"
+#include <algorithm>
 
+#include <vector>
+#include <ostream>
+#include "Item.h"
+
+using namespace std;
+
+
+Player hranyHrac;
 
 
 
@@ -16,13 +26,17 @@ void SetUp() {
 	SetConsoleOutputCP(CP_UTF8);
 	SetConsoleCP(CP_UTF8);
 	std::ios_base::sync_with_stdio(false);
+	Controls::gameState = Controls::TRAVELING;
+	
 }
 
 
 int main()
 {
-	Controls::gameState = Controls::TRAVELING;
+	Player hrac("Jan", "Novák", 100, 100, 100, 100, {});
+	hranyHrac = hrac;
 	SetUp();
+	
 	
 	/*UI::showMap();
 	Controls::moveDown();
@@ -32,6 +46,10 @@ int main()
 	string input = "";
 	bool running = true;
 	while (running) {
+		
+
+		//clear screen
+		//system("cls");
 		if (Controls::gameState == Controls::TRAVELING) {
 			UI::showMap();
 
@@ -39,11 +57,8 @@ int main()
 			Controls::processInput(input);
 		}
 		else if (Controls::gameState == Controls::TRADING) { //TO DO: Zde v tomto ifu bude obchodování
-			cout << "You are now trading. Type 'exit' to leave trading." << endl;
-			cin >> input;
-			if (input == "exit") {
-				Shop::start(hrac);
-			}
+			Shop::start(hranyHrac);
+			Controls::gameState = Controls::TRAVELING;
 		}
 		else if (Controls::gameState == Controls::FIGHTING) { //TO DO: Zde v tomto ifu bude bojování
 			cout << "You are now fighting! Type 'run' to escape." << endl;

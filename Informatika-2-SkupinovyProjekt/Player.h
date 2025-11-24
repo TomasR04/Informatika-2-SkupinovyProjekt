@@ -3,12 +3,15 @@
 #include <vector>
 #include <ostream>
 #include "Item.h"
+#include <algorithm>
 using namespace std;
 class Player //Franta
 {
 public:
 	Player();
 	Player(const std::string& jmeno, const std::string& prijmeni, int hp, int stamina, int maxHp, int maxStamina, vector<Item> inventory);
+
+	
 	 
 	const std::string& getJmeno() const;
 	const std::string& getPrijmeni() const;
@@ -31,6 +34,8 @@ public:
 
 	void pridejInventar(Item polozka);
 	bool odeberInventar(Item polozka);
+	void pridejInventar(const std::string& itemName);
+	bool odeberInventar(const std::string& itemName);
 
 	void damage(int amount);
 	void heal(int amount);
@@ -50,5 +55,8 @@ private:
 	int m_zlato;
 	vector<Item> m_inventar;
 };
+
+// Global player instance declared in main translation unit
+extern Player hranyHrac;
 
 

@@ -1,0 +1,18 @@
+﻿#pragma once
+#include "Player.h"
+#include <vector>
+#include <string>
+
+struct Zbozi {
+    std::string nazev;
+    int cena;
+};
+
+class Shop {
+public:
+    static void start(Player& hrac);
+
+private:
+    static std::vector<Zbozi> nabidka;
+    static int dejCenu(std::string nazev);
+};

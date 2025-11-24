@@ -193,7 +193,14 @@ void Map::checkTile(int positionX, int positionY, int beforeX, int beforeY)
         Map::setMap("main");
     }
     if (trim(tileInfo) == "🍺") {
-        Controls::gameState = Controls::TRADING;
+		string input;
+		cout << "Chceš vstoupit do hospody? (y/n): ";
+		cin >> input;
+        if (input == "y" || input == "Y") {
+            Controls::gameState = Controls::TRADING;
+        }
+
+        
     }
 	if (trim(tileInfo)== "E" || trim(tileInfo)=="B") {
 		Controls::gameState = Controls::FIGHTING;
