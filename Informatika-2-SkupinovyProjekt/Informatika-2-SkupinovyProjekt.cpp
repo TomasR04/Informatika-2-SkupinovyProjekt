@@ -7,6 +7,9 @@
 #include "Shop.h"
 #include <iostream>
 #include <string>
+#include "Fighting.h"
+
+
 
 
 void SetUp() {
