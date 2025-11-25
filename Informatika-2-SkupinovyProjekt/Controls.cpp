@@ -149,7 +149,28 @@ void Controls::processInput(string input)
 		// Display player stats
 		cout << "Player Stats:" << endl;
 		cout << hranyHrac.toString() << endl;
-        return;
+		cout << "Pro využití itemu zadej èíslo položky. Jinak zadej exit." << endl;
+		string itemInput;
+		cout << "> ";
+		cin >> itemInput;
+        if (itemInput == "exit") {
+            return;
+        }
+        else
+        {            
+            try
+            {
+				int itemIndex = stoi(itemInput);
+				Player::useItem(hranyHrac, itemIndex);
+            }
+            catch (const std::exception&)
+            {
+				cout << "Neplatný vstup pro použití itemu." << endl;
+            }
+
+        }
+
+        
     }
 
     if (input == "exit")

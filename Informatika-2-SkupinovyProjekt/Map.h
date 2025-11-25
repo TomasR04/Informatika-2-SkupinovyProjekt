@@ -21,5 +21,6 @@ class Map //�imon
         static void setMap(string mapName);
         static string getTileInfo(int posX = -1, int posY = -1, string mapName = "");
         static void checkTile(int positionX = -1, int positionY = -1, int beforeX = -1, int beforeY = -1);
+		static void overwriteTile(int posX, int posY, string newTile);
 };
 

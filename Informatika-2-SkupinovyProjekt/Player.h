@@ -34,14 +34,7 @@ public:
     void pridejInventar(const std::string& itemName);
     bool odeberInventar(const std::string& itemName);
 
-    // equip/unequip
-    bool equipItem(const std::string& itemName); // vrátí true pokud item existuje a je vybaven
-    void unequip(); // sundá výbavu
-    bool hasEquippedWeapon() const;
-    Item* getEquippedItem(); // mùže vrátit nullptr pokud nic
-
-    // weapon helpers
-    int getEquippedWeaponDamage() const; // pokud nic vybaveno -> 0
+    
 
     void damage(int amount);
     void heal(int amount);
@@ -50,6 +43,7 @@ public:
 
     std::string toString() const;
     friend std::ostream& operator<<(std::ostream& os, const Player& player);
+	static void useItem(Player player, int index);
 
 private:
     std::string m_jmeno;

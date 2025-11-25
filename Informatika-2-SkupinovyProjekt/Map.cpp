@@ -133,7 +133,7 @@ string Map::getTileInfo(int posX, int posY, string mapName)
     {
         //selectedTile = selectedMap[posY][posX];
 		selectedTile = selectedMap[posY][posX];
-        cout << "Getting tile info at position: (" << posX << ", " << posY << ")" << endl;
+        //cout << "Getting tile info at position: (" << posX << ", " << posY << ")" << endl;
     }
     else
     {
@@ -171,7 +171,7 @@ void Map::checkTile(int positionX, int positionY, int beforeX, int beforeY)
     }
 
     string tileInfo = getTileInfo(positionX, positionY);
-	cout << "Stepped on tile: " << tileInfo << endl;
+	//cout << "Stepped on tile: " << tileInfo << endl;
     if (trim(tileInfo) == "🏰")
     {
 		cout << "Entering the castle..." << endl;
@@ -217,6 +217,10 @@ void Map::checkTile(int positionX, int positionY, int beforeX, int beforeY)
         }*/
     }
 	cout << "Current position: (" << positionX << ", " << positionY << ")" << endl;
+}
+void Map::overwriteTile(int posX, int posY, string newTile)
+{
+    Map::currentMap[posY][posX] = newTile;
 }
 // TBD
 // string castletwomap[][] =

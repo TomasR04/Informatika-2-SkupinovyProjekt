@@ -1,6 +1,8 @@
 #include "Fighting.h"
 #include "Controls.h"
 #include "Player.h"
+#include "Item.h"
+#include "Map.h"
 
 #include <iostream>
 #include <cstdlib>
@@ -9,6 +11,7 @@
 using namespace std;
 
 static bool isRandomSeeded = false;
+
 
 static void seedRandomOnce()
 {
@@ -23,11 +26,38 @@ bool Fighting::startFight(Player& player)
 {
     seedRandomOnce();
 
-    // Jednoduchý nepøítel – mùžeš si to pak rozšíøit
+    
     string enemyName = "Goblin";
     int enemyHp = 50;
     int enemyDamageMin = 6;
     int enemyDamageMax = 12;
+
+	Item selectedWeapon = Item("", 0, 0, 0, Item::Type::FOOD);
+
+    cout << "Vyber zbraò:"<< endl;
+	vector<Item> inventory = player.getInventar();
+	vector<Item> weapons;
+	weapons.push_back(Item("Pìst", 0, 5, 0, Item::Type::MELEE_WEAPON)); // defaultní zbraò
+	for (const auto& item : inventory) {
+		if (item.type == Item::Type::MELEE_WEAPON || item.type == Item::Type::RANGED_WEAPON) {
+			weapons.push_back(item);
+		}
+	}
+	for (size_t i = 0; i < weapons.size(); ++i) {
+		cout << i + 1 << ". " << weapons[i].name << " (DMG bonus: " << weapons[i].value << ")\n";
+	}
+	int weaponChoice;
+	cout << "> ";
+	cin >> weaponChoice;
+	if (weaponChoice >= 1 && weaponChoice <= static_cast<int>(weapons.size())) {
+		selectedWeapon = weapons[weaponChoice - 1];
+		cout << "Vybral jsi zbraò: " << selectedWeapon.name << "\n";
+	}
+	else {
+		cout << "Neplatná volba, použiješ pìst.\n";
+		selectedWeapon = Item("Pìst", 0, 5, 0, Item::Type::MELEE_WEAPON);
+	}
+
 
     cout << "\n============================\n";
     cout << "  !!! SOUBOJ ZACINA !!!\n";
@@ -60,7 +90,7 @@ bool Fighting::startFight(Player& player)
         bool wantsToRun = false;  // jestli se hráè pokusil utéct
 
         // získáme bonus z vybavené zbranì
-        int weaponBonus = player.getEquippedWeaponDamage();
+        int weaponBonus = selectedWeapon.value;
 
         // === TAH HRÁÈE ===
         if (cmd == "a" || cmd == "A" || cmd == "attack")
@@ -142,8 +172,10 @@ bool Fighting::startFight(Player& player)
             cout << "\n" << enemyName << " byl poražen!\n";
             cout << "Získáváš 20 zlata.\n";
             player.pridejZlato(20);
+			//smazáni nepøítele z mapy
+			Map::overwriteTile(Controls::x, Controls::y, " ?? ");
             Controls::gameState = Controls::TRAVELING;
-            return true; // vyhrál
+            return true; 
         }
 
         // === TAH NEPØÍTELE (pokud hráè ještì žije a neodešel) ===
