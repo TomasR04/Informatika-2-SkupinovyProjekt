@@ -210,3 +210,9 @@ bool Player::odeberZlato(int amount) {
     }
     return false; 
 }
+
+void Player::pridatZlato(int amount) {
+    if (amount > 0) {
+        m_zlato += amount;
+    }
+}

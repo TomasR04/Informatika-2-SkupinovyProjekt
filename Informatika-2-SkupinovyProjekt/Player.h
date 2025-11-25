@@ -33,6 +33,7 @@ public:
     bool odeberInventar(Item polozka);
     void pridejInventar(const std::string& itemName);
     bool odeberInventar(const std::string& itemName);
+	void pridatZlato(int amount);
 
     
 

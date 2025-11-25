@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include <utility>
+#include "Player.h"
 
 using namespace std;
 
@@ -201,6 +202,20 @@ void Map::checkTile(int positionX, int positionY, int beforeX, int beforeY)
         }
 
         
+    }
+    if (trim(tileInfo)=="⚠️")
+    {
+        //random
+		int a = rand() % 100;
+        if (a < 50) {
+            hranyHrac.pridatZlato(20);
+			cout << "Našel jsi 20 zlatých mincí!" << endl;
+        }
+        else
+        {
+			hranyHrac.damage(10);
+			cout << "Spadl jsi do pasti a ztratil 10 HP!" << endl;
+        }
     }
 	if (trim(tileInfo)== "E" || trim(tileInfo)=="B") {
 		Controls::gameState = Controls::FIGHTING;
